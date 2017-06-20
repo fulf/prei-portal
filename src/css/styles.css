@@ -1,0 +1,76 @@
+#loader {
+  margin: 50px;
+}
+
+.container {
+  margin: 100px auto;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  padding: 0px;
+  list-style: none;
+}
+
+.wifi {
+    cursor: pointer;
+    position: relative;
+    margin: 10px 20% 10px 20%;
+    transition: all 0.5s;
+}
+
+.wifi.good-signal {
+  background-color: #2ecc71;
+}
+
+.wifi.good-signal:hover {
+  background-color: #27ae60;
+}
+
+.wifi.average-signal {
+  background-color: #e67e22;
+}
+
+.wifi.average-signal:hover {
+  background-color: #d35400;
+}
+
+.wifi.bad-signal {
+  background-color: #e74c3c;
+}
+
+.wifi.bad-signal:hover {
+  background-color: #c0392b;
+}
+
+.wifi-content {
+  padding: 30px;
+  background-position: 95%;
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+
+.wifi-content.locked {
+  background-image: url(../img/locked.png);
+}
+
+.wifi-content.unlocked {
+  background-image: url(../img/unlocked.png);
+}
+
+.wifi-content .text {
+  color: white;
+  text-align: left;
+}
+
+.wifi-content .text .text-header {
+  font-size: 30px;
+}
+
+.wifi-content .text .text-label {
+  text-transform: capitalize
+}

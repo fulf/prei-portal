@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>PREi Config Portal</title>
+  <meta name="description" content="WiFi configuration portal for PREi enabled devices.">
+  <meta name="author" content="PREi">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/milligram.min.css">
+  <link rel="stylesheet" href="css/spinner.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>PREi Config Portal</h1>
+    <div id="main">
+    <div id="connect" class="hide">
+      <h4>Available networks</h4>
+      <div id="wifis">
+      </div>
+      <input id="ssid" type="text" name="ssid" placeholder="WiFi SSID">
+      <input id="pass" type="password" name="pass" placeholder="WiFi Password"><br/>
+      <input type="submit" value="Connect">
+      <hr>
+    </div>
+    <div id="disconnect" class="hide">
+      <h4>Connected to network</h4>
+      <input type="submit" value="Disconnect">
+      <hr>
+    </div>
+    </div>
+    <table id="status">
+    </table>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
